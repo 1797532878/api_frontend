@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react';
 import {Button, Card, Descriptions, Form, message, Input, Spin, Divider} from 'antd';
 
 import { useParams } from '@@/exports';
-import {getInterfaceInfoByIdUsingGET} from "@/services/api_backend/interfaceInfoController";
+import {
+  getInterfaceInfoByIdUsingGET,
+  invokeInterfaceInfoUsingPOST
+} from "@/services/api_backend/interfaceInfoController";
 
 /**
  * 主页
